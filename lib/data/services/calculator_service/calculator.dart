@@ -7,10 +7,7 @@ abstract class Calculator {
     if (type =="basic") return BasicCalculator();
 
     throw 'Can\'t create $type.';
-  }
-
-
- // num get result;
+   }
 
   double? doCalculate(double leftOperand,double rightOperand,operator);
 

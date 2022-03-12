@@ -3,7 +3,7 @@ import 'package:oop_calculator/core/values/app_strings.dart';
 import 'package:oop_calculator/data/services/calculator_service/calculator.dart';
 
 class BasicCalculatorController extends GetxController{
-     String calculatorType="basic";
+     String calculatorType=AppStrings.baSic;
      String operator="";
      double? leftOperand;
      double? rightOperand;

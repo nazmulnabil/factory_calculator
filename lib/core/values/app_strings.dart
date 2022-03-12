@@ -1,6 +1,9 @@
 abstract class AppStrings{
   static const String simpleCalculator  = 'Simple Calculator';
   static const String scientificCalculator  = 'Scientific Calculator';
+  static const String calCulator  ='Calculator';
+  static const String baSic  ='basic';
+  static const String sciEntific  ='scientific';
   static const String buttonZero  = '0';
   static const String buttonDoubleZero  = '00';
   static const String buttonEquals  = '=';

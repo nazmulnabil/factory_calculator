@@ -1,111 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:oop_calculator/core/values/app_strings.dart';
-import 'package:oop_calculator/core/values/app_values.dart';
-import 'package:oop_calculator/modules/scientific_calculator/controllers/scientific_calculator_controller.dart';
-import 'package:oop_calculator/widgets/button_builder_scientific.dart';
-
-
-
+import 'package:oop_calculator/modules/scientific_calculator/widgets/scientific_calculator_buttonlist.dart';
+import 'package:oop_calculator/modules/scientific_calculator/widgets/scientific_result_view.dart';
 
 class ScientificCalcualtorView extends StatelessWidget {
-  const ScientificCalcualtorView({Key? key})
-      : super(key: key);
+  const ScientificCalcualtorView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    Get.lazyPut(()=>ScientificCalculatorController());
     return Scaffold(
       appBar: AppBar(title: const Text(AppStrings.scientificCalculator)),
       body: Column(mainAxisAlignment: MainAxisAlignment.end,
-        children: <Widget>[
-
-
-          Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children:  [
-
-                  Obx(()=> Text(
-                  Get.find<ScientificCalculatorController>().input.toString(),style: const TextStyle(fontSize: 38),),),
-                  const SizedBox(height: AppValues.height_16,),
-                  Obx(()=>  Text(Get.find<ScientificCalculatorController>().result.toString(),style: const TextStyle(fontSize: 38),
-                    ),
-                  ),
-                ],
-              )
-            ],
-          ),
-
-
-      //buttons
-          Column(
-            children: [
-              Row(
-                children: [
-                  Expanded(child: ButtonCalculatorScientific(AppStrings.buttoNsine, 1, Colors.redAccent)),
-                  Expanded(child: ButtonCalculatorScientific(AppStrings.buttoNcosine, 1, Colors.blue),),
-                  Expanded(child:   ButtonCalculatorScientific(AppStrings.buttoNtangent, 1, Colors.blue),),
-                  Expanded(child:   ButtonCalculatorScientific(AppStrings.buttonModulous, 1, Colors.blue),),
-
-                ],
-              ),
-              Row(
-                children: [
-                  Expanded(child: ButtonCalculatorScientific(AppStrings.buttoNsquare, 1, Colors.redAccent)),
-                  Expanded(child: ButtonCalculatorScientific(AppStrings.buttonCube, 1, Colors.blue),),
-                  Expanded(child:   ButtonCalculatorScientific(AppStrings.buttoNsquareRoot, 1, Colors.blue),),
-                  Expanded(child:   ButtonCalculatorScientific(AppStrings.buttonLog, 1, Colors.blue),),
-
-                ],
-              ),
-              Row(
-                children: [
-                  Expanded(child: ButtonCalculatorScientific(AppStrings.buttonOne, 1, Colors.redAccent)),
-                  Expanded(child: ButtonCalculatorScientific(AppStrings.buttonTwo, 1, Colors.blue),),
-                  Expanded(child:   ButtonCalculatorScientific(AppStrings.buttonThree, 1, Colors.blue),),
-                  Expanded(child: ButtonCalculatorScientific(AppStrings.buttonAddition, 1, Colors.blue),),
-                ],
-              ),
-              Row(
-                children: [
-                  Expanded(child: ButtonCalculatorScientific(AppStrings.buttonFour, 1, Colors.redAccent)),
-                  Expanded(child: ButtonCalculatorScientific(AppStrings.buttonFive, 1, Colors.blue),),
-                  Expanded(child:   ButtonCalculatorScientific(AppStrings.buttonSix, 1, Colors.blue),),
-                  Expanded(child: ButtonCalculatorScientific(AppStrings.buttonSubtraction, 1, Colors.blue),),
-                ],
-              ),
-              Row(
-                children: [
-                  Expanded(child: ButtonCalculatorScientific(AppStrings.buttonSeven, 1, Colors.redAccent)),
-                  Expanded(child: ButtonCalculatorScientific(AppStrings.buttonEight, 1, Colors.blue),),
-                  Expanded(child:   ButtonCalculatorScientific(AppStrings.buttonNine, 1, Colors.blue),),
-                  Expanded(child: ButtonCalculatorScientific(AppStrings.buttonMultiplication, 1, Colors.blue),),
-                ],
-              ),
-              Row(
-                children: [
-                  Expanded(child: ButtonCalculatorScientific(AppStrings.buttonCancelAll, 1, Colors.redAccent)),
-                  Expanded(child: ButtonCalculatorScientific(AppStrings.buttonCancel, 1, Colors.blue),),
-                  Expanded(child:   ButtonCalculatorScientific(AppStrings.buttonDecimal, 1, Colors.blue),),
-                  Expanded(child: ButtonCalculatorScientific(AppStrings.buttonDivision, 1, Colors.blue),),
-                ],
-              ),
-
-              Row(
-                children: [
-                  Expanded(child: ButtonCalculatorScientific(AppStrings.buttonZero, 1, Colors.redAccent)),
-                  Expanded(child: ButtonCalculatorScientific(AppStrings.buttonDoubleZero, 1, Colors.blue),),
-                  Expanded(child:   ButtonCalculatorScientific(AppStrings.buttonEquals, 1, Colors.blue),),
-
-                ],
-              ),
-
-            ],
-          )
-
+          children: const <Widget>[
+          //input output view
+          ScientificResultView(),
+          //buttons
+          ScientificCalculatorButtonList()
         ],
       ),
     );

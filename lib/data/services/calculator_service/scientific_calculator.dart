@@ -4,9 +4,6 @@ import 'package:oop_calculator/data/services/calculator_service/calculator.dart'
 import 'dart:math';
 
 class ScientificCalculator implements Calculator {
-  @override
-  // TODO: implement area
-  num get result => throw UnimplementedError();
 
   @override
   double? doCalculate(double leftOperand, double rightOperand, operator) {

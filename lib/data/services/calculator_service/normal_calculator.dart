@@ -3,9 +3,7 @@ import 'package:oop_calculator/core/values/app_strings.dart';
 import 'package:oop_calculator/data/services/calculator_service/calculator.dart';
 
 class BasicCalculator implements Calculator {
-  @override
-  // TODO: implement area
- // num get result => throw UnimplementedError();
+
 
   @override
    double? doCalculate(double leftOperand, double rightOperand, operator) {

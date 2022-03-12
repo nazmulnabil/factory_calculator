@@ -23,12 +23,12 @@ class AppPages {
     GetPage(
       name: _Paths.BasicCalculator,
       page: () =>const BasicCalculatorView(),
-     binding:BasicCalculatorBinding(),
+      binding:BasicCalculatorBinding(),
     ),
 
     GetPage(
       name: _Paths.ScientificCalculator,
-      page: () =>ScientificCalcualtorView(),
+      page: () =>const ScientificCalcualtorView(),
         binding:ScientificCalculatorBinding(),
     ),
 

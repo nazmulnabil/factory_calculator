@@ -5,7 +5,7 @@ import 'package:oop_calculator/data/services/calculator_service/calculator.dart'
 
 class ScientificCalculatorController extends GetxController{
 
-  String calculatorType="scientific";
+  String calculatorType=AppStrings.sciEntific;
   String operator="";
   double? leftOperand;
   double? rightOperand;
