@@ -25,19 +25,14 @@ class BasicCalculatorView extends StatelessWidget {
             Column(
 crossAxisAlignment: CrossAxisAlignment.end,
               children:  [
-
                 Obx(()=> Text(
-
                   Get.find<BasicCalculatorController>().input.toString(),style: TextStyle(fontSize: 38),),),
                  SizedBox(height: AppValues.height_16,),
                 Obx(()=>  Text(Get.find<BasicCalculatorController>().result.toString(),style: TextStyle(fontSize: 38),),),
-
-
               ],
             )
           ],
         ),
-          
 
        Column(
          children: [
@@ -82,7 +77,7 @@ crossAxisAlignment: CrossAxisAlignment.end,
 
              ],
            )
-         ],
+       ]
        )
 
         ],

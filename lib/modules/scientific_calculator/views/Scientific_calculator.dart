@@ -3,26 +3,8 @@ import 'package:get/get.dart';
 import 'package:oop_calculator/core/values/app_strings.dart';
 import 'package:oop_calculator/core/values/app_values.dart';
 import 'package:oop_calculator/modules/scientific_calculator/controllers/scientific_calculator_controller.dart';
-import 'package:oop_calculator/widgets/button_builder.dart';
 import 'package:oop_calculator/widgets/button_builder_scientific.dart';
-import 'package:oop_calculator/widgets/button_builder_scientific.dart';
-import 'package:oop_calculator/widgets/button_builder_scientific.dart';
-import 'package:oop_calculator/widgets/button_builder_scientific.dart';
-import 'package:oop_calculator/widgets/button_builder_scientific.dart';
-import 'package:oop_calculator/widgets/button_builder_scientific.dart';
-import 'package:oop_calculator/widgets/button_builder_scientific.dart';
-import 'package:oop_calculator/widgets/button_builder_scientific.dart';
-import 'package:oop_calculator/widgets/button_builder_scientific.dart';
-import 'package:oop_calculator/widgets/button_builder_scientific.dart';
-import 'package:oop_calculator/widgets/button_builder_scientific.dart';
-import 'package:oop_calculator/widgets/button_builder_scientific.dart';
-import 'package:oop_calculator/widgets/button_builder_scientific.dart';
-import 'package:oop_calculator/widgets/button_builder_scientific.dart';
-import 'package:oop_calculator/widgets/button_builder_scientific.dart';
-import 'package:oop_calculator/widgets/button_builder_scientific.dart';
-import 'package:oop_calculator/widgets/button_builder_scientific.dart';
-import 'package:oop_calculator/widgets/button_builder_scientific.dart';
-import 'package:oop_calculator/widgets/button_builder_scientific.dart';
+
 
 
 
@@ -34,7 +16,7 @@ class ScientificCalcualtorView extends StatelessWidget {
   Widget build(BuildContext context) {
     Get.lazyPut(()=>ScientificCalculatorController());
     return Scaffold(
-      appBar: AppBar(title: Text(AppStrings.scientificCalculator)),
+      appBar: AppBar(title: const Text(AppStrings.scientificCalculator)),
       body: Column(mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
 
@@ -47,20 +29,38 @@ class ScientificCalcualtorView extends StatelessWidget {
                 children:  [
 
                   Obx(()=> Text(
-
-                    Get.find<ScientificCalculatorController>().input.toString(),style: TextStyle(fontSize: 38),),),
-                  SizedBox(height: AppValues.height_16,),
-                  Obx(()=>  Text(Get.find<ScientificCalculatorController>().result.toString(),style: TextStyle(fontSize: 38),),),
-
-
+                  Get.find<ScientificCalculatorController>().input.toString(),style: const TextStyle(fontSize: 38),),),
+                  const SizedBox(height: AppValues.height_16,),
+                  Obx(()=>  Text(Get.find<ScientificCalculatorController>().result.toString(),style: const TextStyle(fontSize: 38),
+                    ),
+                  ),
                 ],
               )
             ],
           ),
 
 
+      //buttons
           Column(
             children: [
+              Row(
+                children: [
+                  Expanded(child: ButtonCalculatorScientific(AppStrings.buttoNsine, 1, Colors.redAccent)),
+                  Expanded(child: ButtonCalculatorScientific(AppStrings.buttoNcosine, 1, Colors.blue),),
+                  Expanded(child:   ButtonCalculatorScientific(AppStrings.buttoNtangent, 1, Colors.blue),),
+                  Expanded(child:   ButtonCalculatorScientific(AppStrings.buttonModulous, 1, Colors.blue),),
+
+                ],
+              ),
+              Row(
+                children: [
+                  Expanded(child: ButtonCalculatorScientific(AppStrings.buttoNsquare, 1, Colors.redAccent)),
+                  Expanded(child: ButtonCalculatorScientific(AppStrings.buttonCube, 1, Colors.blue),),
+                  Expanded(child:   ButtonCalculatorScientific(AppStrings.buttoNsquareRoot, 1, Colors.blue),),
+                  Expanded(child:   ButtonCalculatorScientific(AppStrings.buttonLog, 1, Colors.blue),),
+
+                ],
+              ),
               Row(
                 children: [
                   Expanded(child: ButtonCalculatorScientific(AppStrings.buttonOne, 1, Colors.redAccent)),
@@ -101,7 +101,8 @@ class ScientificCalcualtorView extends StatelessWidget {
                   Expanded(child:   ButtonCalculatorScientific(AppStrings.buttonEquals, 1, Colors.blue),),
 
                 ],
-              )
+              ),
+
             ],
           )
 

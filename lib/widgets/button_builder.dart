@@ -18,10 +18,10 @@ class ButtonCalculator extends StatelessWidget {
       height:MediaQuery.of(context).size.height *.1* buttonHeight,
       color: buttonColor,
       child: Padding(
-        padding: EdgeInsets.all(0.0),
+        padding: const EdgeInsets.all(0.0),
         child: ElevatedButton(
             style: ElevatedButton.styleFrom(
-              shape: RoundedRectangleBorder(
+              shape: const RoundedRectangleBorder(
                  // borderRadius: BorderRadius.circular(10),
                   side: BorderSide(
                       color: Colors.white,
@@ -33,7 +33,7 @@ class ButtonCalculator extends StatelessWidget {
             onPressed: () =>Get.find<BasicCalculatorController>().buttonPressed(buttonText),
             child: Text(
               buttonText,
-              style: TextStyle(
+              style: const TextStyle(
                   fontSize: 30.0,
                   fontWeight: FontWeight.normal,
                   color: Colors.white

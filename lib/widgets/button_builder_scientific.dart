@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:oop_calculator/modules/basic_calculator/controllers/basic_calculator_controller.dart';
 import 'package:oop_calculator/modules/scientific_calculator/controllers/scientific_calculator_controller.dart';
 
 class ButtonCalculatorScientific extends StatelessWidget {
@@ -19,10 +17,10 @@ class ButtonCalculatorScientific extends StatelessWidget {
       height:MediaQuery.of(context).size.height *.1* buttonHeight,
       color: buttonColor,
       child: Padding(
-        padding: EdgeInsets.all(0.0),
+        padding: const EdgeInsets.all(0.0),
         child: ElevatedButton(
             style: ElevatedButton.styleFrom(
-              shape: RoundedRectangleBorder(
+              shape: const RoundedRectangleBorder(
                 // borderRadius: BorderRadius.circular(10),
                   side: BorderSide(
                       color: Colors.white,
@@ -34,7 +32,7 @@ class ButtonCalculatorScientific extends StatelessWidget {
             onPressed: () =>Get.find<ScientificCalculatorController>().buttonPressed(buttonText),
             child: Text(
               buttonText,
-              style: TextStyle(
+              style: const TextStyle(
                   fontSize: 30.0,
                   fontWeight: FontWeight.normal,
                   color: Colors.white

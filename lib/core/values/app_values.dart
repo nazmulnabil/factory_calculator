@@ -94,7 +94,6 @@ abstract class AppValues {
   static const int defaultPageNumber = 1;
   static const int defaultDebounceTimeInMilliSeconds = 1000;
   static const int defaultThrottleTimeInMilliSeconds = 500;
-
   static const double height_16 = 16;
 
 

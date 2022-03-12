@@ -16,13 +16,13 @@ class AppPages {
   static final routes = [
     GetPage(
       name: _Paths.MAIN,
-      page: () =>FirstPage(),
+      page: () =>const FirstPage(),
      // binding: MainBinding(),
     ),
 
     GetPage(
       name: _Paths.BasicCalculator,
-      page: () =>BasicCalculatorView(),
+      page: () =>const BasicCalculatorView(),
      binding:BasicCalculatorBinding(),
     ),
 

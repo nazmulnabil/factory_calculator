@@ -21,6 +21,14 @@ abstract class AppStrings{
   static const String buttonSubtraction= "-";
   static const String buttonModulous= "%";
   static const String buttonDecimal= ".";
+  static const String buttonLog= "log";
+  static const String buttoNsine= "sin";
+  static const String buttoNcosine= "cos";
+  static const String buttoNtangent= "tan";
+  static const String buttoNsquare= "^2";
+  static const String buttonCube= "^3";
+  static const String buttoNsquareRoot= "√";
+
 
 
 
