@@ -10,7 +10,7 @@ class BasicCalculatorView extends StatelessWidget {
   Widget build(BuildContext context) {
   //  Get.lazyPut(()=>BasicCalculatorController());
     return Scaffold(
-      appBar: AppBar(title: Text(AppStrings.simpleCalculator)),
+      appBar: AppBar(title: const Text(AppStrings.simpleCalculator)),
       body: Column(mainAxisAlignment: MainAxisAlignment.end,
              children:  const <Widget>[
                //input output view

@@ -34,7 +34,7 @@ class ScientificCalculatorController extends GetxController{
        operatorPressed=false;
     }
     else if(buttonText==AppStrings.buttonCancel){
-         if(input.value.length>0){
+         if(input.value.isNotEmpty){
             input.value=input.value.substring(0, input.value.length - 1);
        }
     }
@@ -91,19 +91,19 @@ class ScientificCalculatorController extends GetxController{
                keyPressed==true;
                operatorPressed=true;
                value='';
-               print(keyPressed);
-               print(operatorPressed);
+               //print(keyPressed);
+              // print(operatorPressed);
          } else{
                 input.value += buttonText;
                 leftOperand=double.parse(value.toString()) ;
             //    print("leftOperand>>>>>$leftOperand");
                 operator=buttonText;
-                print(operator);
+                //print(operator);
                 keyPressed==true;
                 operatorPressed=true;
                  value='';
-                 print(keyPressed);
-                 print(operatorPressed);
+                // print(keyPressed);
+               //  print(operatorPressed);
                 }
               }
             }
@@ -119,32 +119,32 @@ class ScientificCalculatorController extends GetxController{
 
 
       if(operator==AppStrings.buttoNsquare||operator==AppStrings.buttonCube){
-        print("equals pressed");
+        //print("equals pressed");
         rightOperand=double.parse(AppStrings.buttonOne.toString());
-        print("rightOperand>>>>>>>>>$rightOperand");
+      //  print("rightOperand>>>>>>>>>$rightOperand");
         input.value="";
         value='';
 
-       print(leftOperand);
-       print(rightOperand);
-       print(operator);
+       //print(leftOperand);
+      // print(rightOperand);
+      // print(operator);
        operatorPressed=false;
        getResult(leftOperand!,rightOperand!,operator);
 
-       print("result>>>>${result.value}") ;
+     //  print("result>>>>${result.value}") ;
       }
       else{
-        print("equals pressed");
+        //print("equals pressed");
         rightOperand=double.parse(value.toString());
-        print("rightOperand>>>>>>>>>$rightOperand");
+        //print("rightOperand>>>>>>>>>$rightOperand");
         input.value="";
         value='';
-        print(leftOperand);
-        print(rightOperand);
-        print(operator);
+        //print(leftOperand);
+        //print(rightOperand);
+        //print(operator);
         operatorPressed=false;
         getResult(leftOperand!,rightOperand!,operator);
-        print("result>>>>${result.value}") ;
+        //print("result>>>>${result.value}") ;
       }
 
     }

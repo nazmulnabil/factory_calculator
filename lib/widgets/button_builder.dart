@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:oop_calculator/modules/basic_calculator/controllers/basic_calculator_controller.dart';
 
+// ignore: must_be_immutable
 class ButtonCalculator extends StatelessWidget {
   String buttonText;
   double buttonHeight;

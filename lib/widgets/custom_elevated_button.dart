@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:oop_calculator/core/values/app_colors.dart';
 
+// ignore: must_be_immutable
 class ElevatedCustomButton extends StatelessWidget {
   String? text;
   double? fontsize;
   double buttonHeight;
+  // ignore: prefer_typing_uninitialized_variables
   var function;
   ElevatedCustomButton(
       {this.text,

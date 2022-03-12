@@ -8,10 +8,10 @@ class ScientificCalculator implements Calculator {
   @override
   double? doCalculate(double leftOperand, double rightOperand, operator) {
 
-    print("inside basic do calculate");
-    print(leftOperand);
-    print(rightOperand);
-    print(operator);
+  //  print("inside basic do calculate");
+  //  print(leftOperand);
+  //  print(rightOperand);
+ //   print(operator);
     switch(operator){
       case AppStrings.buttonAddition:
         return Addition(leftOperand,rightOperand);

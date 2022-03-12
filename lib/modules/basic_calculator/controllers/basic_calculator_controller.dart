@@ -19,10 +19,10 @@ class BasicCalculatorController extends GetxController{
 
 
      getResult(double? leftOperand,double? rightOperand,String operator){
-          print("inside getResult");
-          print(">>>>>>>>>$leftOperand");
-          print(">>>>>>>>>$rightOperand");
-          print(">>>>>>>>>$operator");
+          //print("inside getResult");
+          //print(">>>>>>>>>$leftOperand");
+          //print(">>>>>>>>>$rightOperand");
+          //print(">>>>>>>>>$operator");
 
           //  Calculator(calculatorType);
 
@@ -56,13 +56,13 @@ class BasicCalculatorController extends GetxController{
 
                          input.value += buttonText;
                          leftOperand=double.parse(value.toString()) ;
-                         print("leftOperand>>>>>$leftOperand");
+                         //print("leftOperand>>>>>$leftOperand");
                          operator=buttonText;
-                         print(operator);
+                       //  print(operator);
                          operatorPressed=true;
                          value='';
-                         print(keyPressed);
-                         print(operatorPressed);
+                      //   print(keyPressed);
+                       //  print(operatorPressed);
                       }
                      }
 
@@ -85,18 +85,18 @@ class BasicCalculatorController extends GetxController{
 
           else if(buttonText==AppStrings.buttonEquals){
 
-               print("equals pressed");
+               //print("equals pressed");
                rightOperand=double.parse(value.toString());
-               print("rightOperand>>>>>>>>>$rightOperand");
+            //   print("rightOperand>>>>>>>>>$rightOperand");
                input.value="";
                value='';
 
-               print(leftOperand);
-               print(rightOperand);
-               print(operator);
+            //   print(leftOperand);
+            //   print(rightOperand);
+            //   print(operator);
                operatorPressed=false;
                getResult(leftOperand!,rightOperand!,operator);
-               print("result>>>>${result.value}") ;
+             //  print("result>>>>${result.value}") ;
           }
 
 
