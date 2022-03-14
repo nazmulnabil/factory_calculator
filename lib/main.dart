@@ -17,7 +17,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'FoodBank',
       theme: ThemeData(),
      //home: FirstPage(),
      initialRoute: AppPages.INITIAL,

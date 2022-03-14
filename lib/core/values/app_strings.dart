@@ -1,5 +1,5 @@
 abstract class AppStrings{
-  static const String simpleCalculator  = 'Simple Calculator';
+  static const String simpleCalculator  = 'Basic Calculator';
   static const String scientificCalculator  = 'Scientific Calculator';
   static const String calCulator  ='Calculator';
   static const String baSic  ='basic';
