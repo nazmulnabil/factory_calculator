@@ -1,6 +1,6 @@
 # Factory_calculator
 
-***This is a flutter calculator app based on Factory design pattern...WHich consists of two parst-
+***This is a flutter calculator app based on Factory design pattern...WHich consists of two parts-
 I. Basic calulator.
 II. Scientific calculator.
 ***Object oriented programming strictly maintained with ptoper abstraction layer..
