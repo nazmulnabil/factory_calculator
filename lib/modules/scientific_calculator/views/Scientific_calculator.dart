@@ -14,8 +14,9 @@ class ScientificCalcualtorView extends StatelessWidget {
           centerTitle: true,
           backgroundColor: AppColors.baseThemeColor,
           title: const Text(AppStrings.scientificCalculator)),
-      body: Column(mainAxisAlignment: MainAxisAlignment.end,
-          children: const <Widget>[
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: const <Widget>[
           //input output view
           ScientificResultView(),
           //buttons
