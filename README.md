@@ -1,16 +1,16 @@
-# oop_calculator
+# Factory_calculator
 
-A new Flutter application.
+***This is a flutter calculator app based on Factory design pattern...WHich consists of two parst-
+I. Basic calulator.
+II. Scientific calculator.
+***Object oriented programming strictly maintained with ptoper abstraction layer..
+***The ui is fully separated from logic...
+***Usage of customized reusable widgets...
+***State management system---GetX...
+***Usage of bindings for dependency injection.Controllers are injected lazily so that
+it is attached to views only when it's needed...
+***Large widget trees are avoided to avoid the build cost...
+***Native splash screen...
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
