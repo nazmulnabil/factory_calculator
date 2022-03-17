@@ -7,7 +7,5 @@ abstract class AppColors {
   static const Color titleColor = Color(0xFF14213F);
   static const Color whiteTextColor = Colors.white;
   static const Color greyTextColor = Color(0xFF595959);
- // static const Color off_white_Color = Color(0xFFF8F0E3);
- // static const Color baseThemeColor = Color(0xFFa52a2a);
   static const Color baseThemeColor = Color(0xFF0f4d92);
 }

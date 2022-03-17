@@ -5,8 +5,7 @@ import 'package:oop_calculator/modules/main/first_page.dart';
 import 'package:oop_calculator/modules/scientific_calculator/bindings/scientific_calculator_bindings.dart';
 import 'package:oop_calculator/modules/scientific_calculator/views/Scientific_calculator.dart';
 
-
-part  'app_routes.dart';
+part 'app_routes.dart';
 
 class AppPages {
   AppPages._();
@@ -16,21 +15,18 @@ class AppPages {
   static final routes = [
     GetPage(
       name: _Paths.MAIN,
-      page: () =>const FirstPage(),
-     // binding: MainBinding(),
+      page: () => const FirstPage(),
+      // binding: MainBinding(),
     ),
-
     GetPage(
       name: _Paths.BasicCalculator,
-      page: () =>const BasicCalculatorView(),
-      binding:BasicCalculatorBinding(),
+      page: () => const BasicCalculatorView(),
+      binding: BasicCalculatorBinding(),
     ),
-
     GetPage(
       name: _Paths.ScientificCalculator,
-      page: () =>const ScientificCalcualtorView(),
-        binding:ScientificCalculatorBinding(),
+      page: () => const ScientificCalcualtorView(),
+      binding: ScientificCalculatorBinding(),
     ),
-
   ];
 }
